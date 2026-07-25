@@ -1,21 +1,209 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+
+const ZOCDOC_URL =
+  'https://www.zocdoc.com/practice/proud-to-smile-dentistry-90291?lock=true&referrerType=widget';
+
+const testimonials = [
+  {
+    quote:
+      "I have been going to Dr. Patti for the last 25 years. She is the best. Her practice is very tech savvy unlike other dentists.",
+    author: 'Naresh P.',
+  },
+  {
+    quote: 'Dr. Patti and her staff are the best. She is very skillful and knowledgeable.',
+    author: 'Malinee S.',
+  },
+  {
+    quote: "Dr Patti is not only efficient and knowledgeable, but she's also one of the most empathetic, kind, and personable dentists I've ever met.",
+    author: 'Jose O.',
+  },
+];
 ---
 
-<BaseLayout title="Site Factory">
-  <main class="min-h-screen flex items-center justify-center">
-    <div class="text-center p-8">
-      <h1 class="text-4xl font-display font-bold text-primary mb-4">
-        Site Factory Ready
-      </h1>
-      <p class="text-lg text-neutral-600 mb-8">
-        Run <code class="bg-neutral-200 px-2 py-1 rounded">/project:intake</code> to begin.
-      </p>
-      <div class="text-sm text-neutral-500">
-        <p>1. Edit <code>intake/INTAKE.md</code> with your project details</p>
-        <p>2. Edit <code>intake/sitemap.md</code> with your page structure</p>
-        <p>3. Run the intake command to start generation</p>
+<BaseLayout
+  title="Dentist in Bernardsville, NJ | Proud To Smile Dentistry"
+  description="Cosmetic, Family, and General Dentistry & Orthodontic Dentistry in Bernardsville, NJ. Call 908-221-1188 or schedule online with Dr. Patricia Swaintek-Lamb, DMD."
+>
+  <Header currentPath="/" />
+
+  <main id="main-content">
+    <Hero />
+
+    <!-- Insurance strip -->
+    <section class="bg-primary-900 py-8 sm:py-9">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-4 text-center sm:flex-row sm:justify-between sm:px-6 sm:text-left lg:px-8">
+        <p class="text-white">We accept all major insurance providers.</p>
+        <a href="/patient-center/insurance/" class="btn btn-secondary shrink-0">Am I Covered?</a>
       </div>
-    </div>
+    </section>
+
+    <!-- What Sets Us Apart -->
+    <section class="py-[var(--spacing-section)]" aria-labelledby="apart-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <img
+            src="/images/proudtosmile/office-collage.webp"
+            alt="Collage of the Proud To Smile Dentistry office and team with a patient"
+            width="654"
+            height="599"
+            loading="lazy"
+            class="w-full rounded-lg border border-border object-cover"
+          />
+          <div>
+            <h2 id="apart-heading">What Sets Us Apart</h2>
+            <p class="mt-4 text-lg text-neutral-700">
+              Patients choose Proud To Smile because we're a warm, welcoming place to be — not a
+              run-of-the-mill dental office. We blend modern, state-of-the-art dentistry with a
+              close-knit team that genuinely cares.
+            </p>
+            <ul class="mt-8 space-y-6">
+              <li>
+                <h3>Meet Our Doctors</h3>
+                <p class="mt-1 text-neutral-700">
+                  Dr. Patricia Swaintek-Lamb brings over 25 years of experience and a reputation as
+                  a recognized speaker and mentor in the dental profession.
+                </p>
+                <a href="/doctors/" class="mt-2 inline-flex items-center gap-1 font-semibold text-primary-700 hover:underline">
+                  Meet Our Doctors <span aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <h3>About Us</h3>
+                <p class="mt-1 text-neutral-700">
+                  We take a holistic approach to dental treatment, because oral health affects the
+                  health of your whole body.
+                </p>
+                <a href="/about/" class="mt-2 inline-flex items-center gap-1 font-semibold text-primary-700 hover:underline">
+                  Learn More About Us <span aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <h3>New Patients</h3>
+                <p class="mt-1 text-neutral-700">
+                  Hand warmers, scented pillows, and entertainment help make every visit pleasant —
+                  see what to expect before you come in.
+                </p>
+                <a href="/patient-center/new-patients/" class="mt-2 inline-flex items-center gap-1 font-semibold text-primary-700 hover:underline">
+                  Get More Information <span aria-hidden="true">→</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-secondary-900 py-[var(--spacing-section)] text-white" aria-labelledby="testimonials-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 id="testimonials-heading" class="text-center text-white">What Our Patients Say</h2>
+        <div class="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          {testimonials.map((t) => (
+            <blockquote class="rounded-[var(--radius-lg)] bg-white/10 p-8">
+              <p class="text-lg leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
+              <p class="mt-4 text-sm font-semibold text-white/70">{t.author}</p>
+            </blockquote>
+          ))}
+        </div>
+        <div class="mt-10 text-center">
+          <a href="/testimonials/" class="btn btn-secondary">Read All Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services grid -->
+    <section class="py-[var(--spacing-section)]" aria-labelledby="services-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 id="services-heading">Discover Quality Dental Care for Every Smile</h2>
+          <p class="mt-4 text-lg text-neutral-700">
+            From routine cleanings to complete smile makeovers, explore our comprehensive dental
+            services — cosmetic, family, and general dentistry & orthodontic care, all under one
+            roof in Bernardsville.
+          </p>
+        </div>
+        <div class="mt-12">
+          <ServicesGrid />
+        </div>
+      </div>
+    </section>
+
+    <!-- Everything You Need -->
+    <section class="bg-accent-50 py-[var(--spacing-section)]" aria-labelledby="need-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 id="need-heading">Everything You Need for Better Dental Care</h2>
+          <p class="mt-4 text-lg text-neutral-700">
+            We're committed to making your dental care experience smooth and stress-free.
+          </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="card">
+            <h3>New Patients</h3>
+            <p class="mt-2 text-sm text-neutral-700">
+              Getting started with better dental health is simple. Learn what to expect before your
+              first visit.
+            </p>
+            <a href="/patient-center/new-patients/" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:underline">
+              Get More Information →
+            </a>
+          </div>
+          <div class="card">
+            <h3>Patient Forms</h3>
+            <p class="mt-2 text-sm text-neutral-700">
+              Save time by completing your new-patient paperwork online before you arrive.
+            </p>
+            <a href="/patient-center/patient-forms/" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:underline">
+              Download Forms <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="card">
+            <h3>Insurance</h3>
+            <p class="mt-2 text-sm text-neutral-700">
+              We work with most major insurance providers to help maximize your benefits.
+            </p>
+            <a href="/patient-center/insurance/" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:underline">
+              Am I Covered? <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="card">
+            <h3>Pricing</h3>
+            <p class="mt-2 text-sm text-neutral-700">
+              Quality dental care should be accessible — explore transparent pricing and payment
+              options.
+            </p>
+            <a href="/patient-center/pricing/" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:underline">
+              Learn More About Pricing <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="relative overflow-hidden bg-primary-900 py-[var(--spacing-section)]" aria-labelledby="cta-heading">
+      <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <div class="rounded-[var(--radius-lg)] bg-white p-10 sm:p-14">
+          <h2 id="cta-heading">Begin Your Journey to Better Dental Health</h2>
+          <p class="mt-4 text-lg text-neutral-700">
+            Transform your smile with our expert team. We offer flexible appointment times and
+            personalized care to help you achieve your healthiest smile.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href={ZOCDOC_URL} target="_blank" rel="noopener" class="btn btn-primary">
+              Schedule Appointment
+            </a>
+            <a href="tel:+19082211188" class="btn btn-outline">Call 908-221-1188</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <Footer />
 </BaseLayout>

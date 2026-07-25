@@ -1,0 +1,278 @@
+---
+// component-builder: Header
+// Purpose: Sticky primary navigation with Services mega-menu, About and
+// Patient Center dropdowns, and phone/booking CTAs.
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '' } = Astro.props;
+
+const PHONE = '908-221-1188';
+const PHONE_HREF = 'tel:+19082211188';
+const ZOCDOC_URL =
+  'https://www.zocdoc.com/practice/proud-to-smile-dentistry-90291?lock=true&referrerType=widget';
+
+const services = [
+  { label: 'Cleanings', href: '/service/cleaning/' },
+  { label: 'Veneers', href: '/service/veneers/' },
+  { label: 'Teeth Whitening', href: '/service/teeth-whitening/' },
+  { label: 'Emergency Dentistry', href: '/service/emergency-dentistry/' },
+  { label: 'Crowns', href: '/service/crowns/' },
+  { label: 'Clear Aligner Therapy', href: '/service/invisalign/' },
+  { label: 'Dental Implants', href: '/service/dental-implants/' },
+  { label: 'Botox', href: '/service/botox/' },
+  { label: 'Dentures', href: '/service/dentures/' },
+  { label: 'Periodontal Therapy', href: '/service/periodontal-therapy/' },
+  { label: 'Cosmetic & Restorative Dentistry', href: '/service/cosmetic-and-restorative-dentistry/' },
+  { label: 'Extractions & Oral Surgery', href: '/service/extractions-oral-surgery/' },
+  { label: 'Pediatric Dentistry', href: '/service/pediatric-dentistry/' },
+  { label: 'Sleep Apnea Treatment', href: '/service/sleep-apnea/' },
+];
+
+const aboutLinks = [
+  { label: 'About Us', href: '/about/' },
+  { label: 'Careers', href: '/about/careers/' },
+  { label: 'News & Press', href: '/about/news/' },
+];
+
+const patientCenterLinks = [
+  { label: 'New Patients', href: '/patient-center/new-patients/' },
+  { label: 'Patient Forms', href: '/patient-center/patient-forms/' },
+  { label: 'Insurance', href: '/patient-center/insurance/' },
+  { label: 'Pricing', href: '/patient-center/pricing/' },
+  { label: 'Financial Options', href: '/patient-center/financial-options/' },
+  { label: 'FAQs', href: '/patient-center/faqs/' },
+];
+
+const isActive = (href: string) => currentPath === href;
+---
+
+<header class="sticky top-0 z-50 bg-white border-b border-border">
+  <a
+    href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-primary-600 focus:px-4 focus:py-2 focus:text-white"
+  >
+    Skip to main content
+  </a>
+
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+    <a href="/" class="flex shrink-0 items-center gap-2" aria-label="Proud To Smile Dentistry — Home">
+      <img
+        src="/images/proudtosmile/logo.webp"
+        alt=""
+        width="416"
+        height="160"
+        class="h-10 w-auto sm:h-11"
+      />
+    </a>
+
+    <!-- Desktop nav -->
+    <nav aria-label="Main navigation" class="hidden xl:block">
+      <ul class="flex items-center gap-1 text-sm font-medium text-neutral-800">
+        <li>
+          <a
+            href="/"
+            class:list={['nav-link', isActive('/') && 'nav-link-active']}
+            aria-current={isActive('/') ? 'page' : undefined}>Home</a
+          >
+        </li>
+        <li class="relative">
+          <details class="group">
+            <summary class="nav-link cursor-pointer select-none list-none">
+              About
+              <svg class="ml-1 inline h-3 w-3 transition-transform group-open:rotate-180" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </summary>
+            <ul class="dropdown-panel">
+              {aboutLinks.map((link) => (
+                <li><a href={link.href} class="dropdown-link">{link.label}</a></li>
+              ))}
+            </ul>
+          </details>
+        </li>
+        <li class="relative">
+          <details class="group">
+            <summary class="nav-link cursor-pointer select-none list-none">
+              Services
+              <svg class="ml-1 inline h-3 w-3 transition-transform group-open:rotate-180" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </summary>
+            <ul class="dropdown-panel dropdown-panel-wide grid-cols-2">
+              {services.map((service) => (
+                <li><a href={service.href} class="dropdown-link">{service.label}</a></li>
+              ))}
+              <li class="col-span-2 mt-1 border-t border-border pt-2">
+                <a href="/services/" class="dropdown-link font-semibold text-primary-700">View All Services</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <a href="/doctors/" class:list={['nav-link', isActive('/doctors/') && 'nav-link-active']}>Doctors</a>
+        </li>
+        <li class="relative">
+          <details class="group">
+            <summary class="nav-link cursor-pointer select-none list-none">
+              Patient Center
+              <svg class="ml-1 inline h-3 w-3 transition-transform group-open:rotate-180" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </summary>
+            <ul class="dropdown-panel">
+              {patientCenterLinks.map((link) => (
+                <li><a href={link.href} class="dropdown-link">{link.label}</a></li>
+              ))}
+            </ul>
+          </details>
+        </li>
+        <li>
+          <a href="/blog/" class="nav-link">Blog</a>
+        </li>
+        <li>
+          <a href="/testimonials/" class="nav-link">Testimonials</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- CTAs -->
+    <div class="hidden shrink-0 items-center gap-3 xl:flex">
+      <a href={PHONE_HREF} class="btn btn-outline">
+        {PHONE}
+      </a>
+      <a href={ZOCDOC_URL} target="_blank" rel="noopener" class="btn btn-primary">
+        Schedule Appointment
+      </a>
+    </div>
+
+    <!-- Mobile menu toggle -->
+    <button
+      type="button"
+      class="-mr-2 p-2 text-neutral-800 xl:hidden"
+      id="mobile-menu-toggle"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Open menu"
+    >
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile nav -->
+  <div id="mobile-menu" class="hidden border-t border-border xl:hidden">
+    <nav aria-label="Mobile navigation" class="max-h-[calc(100vh-4.5rem)] overflow-y-auto px-4 py-4">
+      <ul class="space-y-1 text-base font-medium text-neutral-800">
+        <li><a href="/" class="mobile-link">Home</a></li>
+        <li>
+          <details>
+            <summary class="mobile-link cursor-pointer select-none list-none">About</summary>
+            <ul class="mt-1 space-y-1 pl-4">
+              {aboutLinks.map((link) => (
+                <li><a href={link.href} class="mobile-sublink">{link.label}</a></li>
+              ))}
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="mobile-link cursor-pointer select-none list-none">Services</summary>
+            <ul class="mt-1 space-y-1 pl-4">
+              {services.map((service) => (
+                <li><a href={service.href} class="mobile-sublink">{service.label}</a></li>
+              ))}
+              <li><a href="/services/" class="mobile-sublink font-semibold text-primary-700">View All Services</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="/doctors/" class="mobile-link">Doctors</a></li>
+        <li>
+          <details>
+            <summary class="mobile-link cursor-pointer select-none list-none">Patient Center</summary>
+            <ul class="mt-1 space-y-1 pl-4">
+              {patientCenterLinks.map((link) => (
+                <li><a href={link.href} class="mobile-sublink">{link.label}</a></li>
+              ))}
+            </ul>
+          </details>
+        </li>
+        <li><a href="/blog/" class="mobile-link">Blog</a></li>
+        <li><a href="/testimonials/" class="mobile-link">Testimonials</a></li>
+      </ul>
+      <div class="mt-4 flex flex-col gap-3">
+        <a href={PHONE_HREF} class="btn btn-outline justify-center">{PHONE}</a>
+        <a href={ZOCDOC_URL} target="_blank" rel="noopener" class="btn btn-primary justify-center">
+          Schedule Appointment
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  @reference "../styles/global.css";
+
+  .nav-link {
+    @apply block rounded-full px-3 py-2 transition-colors hover:bg-neutral-100 hover:text-primary-700;
+  }
+  .nav-link-active {
+    @apply font-semibold text-primary-700 underline decoration-2 underline-offset-4;
+  }
+  .dropdown-panel {
+    @apply absolute left-0 top-full z-10 mt-1 grid w-64 gap-0.5 rounded-lg border border-border bg-white p-2 shadow-lg;
+  }
+  .dropdown-panel-wide {
+    @apply w-[36rem] grid-cols-2;
+  }
+  .dropdown-link {
+    @apply block rounded-md px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-100 hover:text-primary-700;
+  }
+  .mobile-link {
+    @apply block rounded-md px-2 py-2.5;
+  }
+  .mobile-sublink {
+    @apply block rounded-md px-2 py-2 text-sm text-neutral-600;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle?.addEventListener('click', () => {
+    const isHidden = menu?.classList.toggle('hidden');
+    toggle.setAttribute('aria-expanded', String(!isHidden));
+    toggle.setAttribute('aria-label', isHidden ? 'Open menu' : 'Close menu');
+  });
+
+  // Close any open desktop dropdown when clicking outside it.
+  document.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement;
+    document.querySelectorAll('header details[open]').forEach((details) => {
+      if (!details.contains(target)) {
+        details.removeAttribute('open');
+      }
+    });
+  });
+
+  // Close open dropdowns and the mobile menu on Escape.
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      document.querySelectorAll('header details[open]').forEach((details) => {
+        details.removeAttribute('open');
+      });
+      if (!menu?.classList.contains('hidden')) {
+        menu?.classList.add('hidden');
+        toggle?.setAttribute('aria-expanded', 'false');
+        toggle?.setAttribute('aria-label', 'Open menu');
+      }
+    }
+  });
+</script>

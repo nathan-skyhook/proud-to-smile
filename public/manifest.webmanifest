@@ -1,11 +1,11 @@
 {
-  "name": "[Business Name]",
-  "short_name": "[Short Name]",
-  "description": "[Business description]",
+  "name": "Proud To Smile Dentistry",
+  "short_name": "Proud To Smile",
+  "description": "Cosmetic, Family, and General Dentistry & Orthodontic Dentistry in Bernardsville, NJ",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#1249E9",
   "icons": [
     {
       "src": "/icon-192.png",

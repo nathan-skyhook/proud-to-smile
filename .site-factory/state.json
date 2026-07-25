@@ -1,8 +1,8 @@
 {
-  "phase": "intake_complete",
+  "phase": "homepage_pending_approval",
   "created_at": null,
   "intake_processed_at": "2026-07-24",
-  "homepage_generated_at": null,
+  "homepage_generated_at": "2026-07-25",
   "homepage_approved_at": null,
   "pages_generated_at": null,
   "completed_at": null,
@@ -581,7 +581,7 @@
       "/terms-conditions",
       "/testimonials"
     ],
-    "built": [],
+    "built": ["/"],
     "redirects": [],
     "notes": {
       "provider_location_scope": "Reference site (pdp.carenetic.digital) has 2 locations and 18 doctor pages; real Proud to Smile practice has 1 location (Bernardsville, NJ) and 2 real staff (Dr. Patricia Swaintek-Lamb DMD, Karima West RDH). Per client decision, page count matches the real business, not the reference's fabricated roster. Design/layout template for doctor and location page types still follows the reference.",

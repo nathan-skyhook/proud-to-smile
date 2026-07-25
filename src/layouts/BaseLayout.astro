@@ -12,17 +12,31 @@ interface Props {
 
 const {
   title,
-  description = 'Site Factory generated website',
+  description = 'Cosmetic, Family, and General Dentistry & Orthodontic Dentistry in Bernardsville, NJ.',
   image,
   noindex = false,
 } = Astro.props;
 
-// Site-wide structured data (customize in intake/INTAKE.md)
+// Site-wide structured data — source: reference/content-proudtosmile.md section 1
 const organizationData = {
-  name: "[Business Name]",
+  name: 'Proud To Smile Dentistry',
   url: Astro.site?.href,
-  logo: new URL('/images/logo.png', Astro.site).href,
-  // Add more fields from INTAKE.md: address, phone, email, social profiles
+  logo: new URL('/images/proudtosmile/logo.webp', Astro.site).href,
+  image: new URL('/images/proudtosmile/logo.webp', Astro.site).href,
+  telephone: '+1-908-221-1188',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '10 Anderson Hill Road',
+    addressLocality: 'Bernardsville',
+    addressRegion: 'NJ',
+    postalCode: '07924',
+    addressCountry: 'US',
+  },
+  sameAs: [
+    'https://www.facebook.com/Proudtosmile/',
+    'https://www.instagram.com/proudtosmile/',
+    'https://www.youtube.com/channel/UClzPIteZ-7o4VpC3dbZ2UFA',
+  ],
 };
 ---
 
@@ -37,20 +51,18 @@ const organizationData = {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Google Fonts with font-display: swap for performance -->
-    <!-- Update this URL based on intake/branding/fonts.md -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Complete Favicon Set -->
+    <!-- Favicon set (derived from public/images/proudtosmile/practice-icon.webp) -->
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
 
     <!-- Theme color for browser UI -->
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#1249E9" />
 
     <!-- SEO Meta Tags (includes Open Graph and Twitter Cards) -->
     <SEOHead
@@ -60,10 +72,10 @@ const organizationData = {
       noindex={noindex}
     />
 
-    <!-- Organization Structured Data (site-wide) -->
-    <StructuredData type="Organization" data={organizationData} />
+    <!-- Dentist / LocalBusiness Structured Data (site-wide) -->
+    <StructuredData type="LocalBusiness" data={{ '@type': 'Dentist', ...organizationData }} />
   </head>
-  <body class="font-body text-neutral-900 bg-neutral-50 antialiased">
+  <body class="font-body text-neutral-900 bg-white antialiased">
     <slot />
   </body>
 </html>
