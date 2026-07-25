@@ -41,7 +41,10 @@ Exclude:
 
 Delete the option you're NOT using and fill in below:
 
-- Home (/)
-- About (/about)
-- Services (/services)
-- Contact (/contact)
+BUILD_ALL
+
+Exclude:
+- /wp-admin/*
+- /login
+- /old-*
+- /draft-*

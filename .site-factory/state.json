@@ -1,16 +1,603 @@
 {
-  "phase": "not_started",
+  "phase": "intake_complete",
   "created_at": null,
-  "intake_processed_at": null,
+  "intake_processed_at": "2026-07-24",
   "homepage_generated_at": null,
   "homepage_approved_at": null,
   "pages_generated_at": null,
   "completed_at": null,
   "pages": {
-    "discovered": [],
-    "planned": [],
+    "discovered": [
+      {
+        "path": "/",
+        "title": "Dentist in Harrison, OH | Harrison Family Dental",
+        "in_nav": true
+      },
+      {
+        "path": "/about",
+        "title": "Committed to Your Dental Health",
+        "in_nav": true
+      },
+      {
+        "path": "/about/careers",
+        "title": "Carenetic General Dentistry Dental Office in Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/about/news",
+        "title": "Dental Health News & Updates",
+        "in_nav": true
+      },
+      {
+        "path": "/about/our-team",
+        "title": "Compassionate Dental Professionals",
+        "in_nav": true
+      },
+      {
+        "path": "/accessibility-statement",
+        "title": "Accessibility Statement - General",
+        "in_nav": false
+      },
+      {
+        "path": "/advanced-orthodontic-technology",
+        "title": "Advanced Orthodontic Technology - General",
+        "in_nav": true
+      },
+      {
+        "path": "/appointment-thank-you",
+        "title": "Appointment Thank You - General",
+        "in_nav": false
+      },
+      {
+        "path": "/bill-pay",
+        "title": "Easy Online Bill Pay | Dental Payments",
+        "in_nav": false
+      },
+      {
+        "path": "/blog",
+        "title": "Oral Health Insights | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/blog/5-easy-tips-to-improve-your-dental-hygiene-at-home",
+        "title": "5 Easy Tips to Improve Your Dental Hygiene at Home - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/5-easy-ways-to-maintain-healthy-teeth-and-gums",
+        "title": "5 Easy Ways to Maintain Healthy Teeth and Gums - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/author/carenetic",
+        "title": "Carenetic Dental, Author at General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/dental-implants-vs-bridges-which-is-right-for-you",
+        "title": "Dental Implants vs. Bridges: Which is Right for You? - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/how-laser-dentistry-can-improve-your-oral-health",
+        "title": "How Laser Dentistry Can Improve Your Oral Health - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/how-porcelain-veneers-can-transform-your-smile",
+        "title": "How Porcelain Veneers Can Transform Your Smile - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/surprising-foods-that-can-damage-your-teeth",
+        "title": "Surprising Foods That Can Damage Your Teeth - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/the-importance-of-biannual-dental-cleanings",
+        "title": "The Importance of Biannual Dental Cleanings - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/the-link-between-oral-health-and-overall-wellness",
+        "title": "The Link Between Oral Health and Overall Wellness - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/tips-for-caring-for-your-dentures-or-partial-dentures",
+        "title": "Tips for Caring for Your Dentures or Partial Dentures - General",
+        "in_nav": false
+      },
+      {
+        "path": "/blog/understanding-the-different-types-of-dental-fillings",
+        "title": "Understanding the Different Types of Dental Fillings - General",
+        "in_nav": false
+      },
+      {
+        "path": "/childrens-dentistry",
+        "title": "Kids Dentist Chandler | Child-Friendly Dental Care",
+        "in_nav": true
+      },
+      {
+        "path": "/clear-aligners",
+        "title": "Clear Aligners - General",
+        "in_nav": true
+      },
+      {
+        "path": "/consent-for-treatment",
+        "title": "Consent for Treatment - General",
+        "in_nav": false
+      },
+      {
+        "path": "/cookie-policy",
+        "title": "Cookie Policy - General",
+        "in_nav": false
+      },
+      {
+        "path": "/cosmetic-dentistry",
+        "title": "Cosmetic Dentistry in Harrison, OH",
+        "in_nav": true
+      },
+      {
+        "path": "/dental-implants",
+        "title": "Dental Implants - General",
+        "in_nav": true
+      },
+      {
+        "path": "/dental-veneers",
+        "title": "Dental Veneers - General",
+        "in_nav": true
+      },
+      {
+        "path": "/diagnostic-services",
+        "title": "Dental Imaging & Diagnostic Services in Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/disclaimer",
+        "title": "Disclaimer - General",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors",
+        "title": "Trusted Dental Professionals Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/doctors/dr-abigail-guzman-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-andrew-flores-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-avery-navarro-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-daniel-vargas-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-david-flores-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-emily-nguyen-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-emma-salazar-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-ethan-sandoval-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-isabella-morales-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-jacob-reyes-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-joshua-mendoza-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-matthew-ramos-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-mia-castillo-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-michael-hernandez-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-olivia-diaz-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-robert-brown-dds",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-sarah-patel-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/doctors/dr-sophia-gupta-dmd",
+        "title": "Meet Our Dentist | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/emergency-services",
+        "title": "24-Hour Emergency Dentist Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/financial-policies",
+        "title": "Financial Policies - General",
+        "in_nav": false
+      },
+      {
+        "path": "/grievance-procedure",
+        "title": "Grievance Procedure - General",
+        "in_nav": false
+      },
+      {
+        "path": "/hipaa-compliance-statement",
+        "title": "HIPAA Compliance Statement - General",
+        "in_nav": false
+      },
+      {
+        "path": "/locations",
+        "title": "Dental Locations in Harrison, OH | Harrison Family Dental",
+        "in_nav": false
+      },
+      {
+        "path": "/locations/downtown-dental-office",
+        "title": "Family Dentistry Dental Office | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/locations/east-end-dental-clinic",
+        "title": "Family Dentistry Dental Office | Carenetic General Dentistry",
+        "in_nav": false
+      },
+      {
+        "path": "/news/carenetic-general-dentistry-celebrates-dental-assistant-recognition-week",
+        "title": "Carenetic General Dentistry Celebrates Dental Assistant Recognition Week - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/carenetic-general-dentistry-donates-dental-care-supplies-to-local-shelter",
+        "title": "Carenetic General Dentistry Donates Dental Care Supplies to Local Shelter - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/carenetic-general-dentistry-expands-services-to-include-nightguard-therapy",
+        "title": "Carenetic General Dentistry Expands Services to Include Nightguard Therapy - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/carenetic-general-dentistry-hosts-free-dental-screenings-for-veterans",
+        "title": "Carenetic General Dentistry Hosts Free Dental Screenings for Veterans - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/carenetic-general-dentistry-partners-with-local-nonprofits-for-oral-health-initiative",
+        "title": "Carenetic General Dentistry Partners with Local Nonprofits for Oral Health Initiative - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/carenetic-general-dentistry-unveils-state-of-the-art-digital-x-ray",
+        "title": "Carenetic General Dentistry Unveils State-of-the-Art Digital X-Ray - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/carenetic-general-dentistry-wins-best-dental-practice-in-mesa-gilbert-and-queen-creek-award",
+        "title": "Carenetic General Dentistry Wins Best Dental Practice in Chandler Award - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/dr-robert-brown-honored-as-top-general-dentist-in-the-region",
+        "title": "Dr. Robert Brown Honored as Top General Dentist in the Region - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/dr-robert-smith-appointed-to-state-dental-board",
+        "title": "Dr. Robert Smith Appointed to State Dental Board - General",
+        "in_nav": false
+      },
+      {
+        "path": "/news/practice-launches-new-patient-loyalty-program",
+        "title": "Practice Launches New Patient Loyalty Program - General",
+        "in_nav": false
+      },
+      {
+        "path": "/notice-of-non-discrimination",
+        "title": "Notice of Non-discrimination - General",
+        "in_nav": false
+      },
+      {
+        "path": "/offers-promotions",
+        "title": "Offers & Promotions - General",
+        "in_nav": false
+      },
+      {
+        "path": "/oral-surgery-restoration",
+        "title": "Oral Surgeon & Dental Restoration in Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/orthodontics",
+        "title": "Invisalign & Orthodontic Care Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-center",
+        "title": "Carenetic General Dentistry Dental Office in Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-center/faqs",
+        "title": "Dental Care Frequently Asked Questions | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-center/financial-options",
+        "title": "Flexible Dental Financing | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-center/insurance",
+        "title": "Dental Insurance Coverage Options | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-center/new-patients",
+        "title": "Welcome New Patients | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-center/patient-forms",
+        "title": "Download Patient Forms | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-center/pricing",
+        "title": "Affordable Dental Care Options | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-portal",
+        "title": "Secure Patient Portal | Manage Your Dental Care",
+        "in_nav": true
+      },
+      {
+        "path": "/patient-rights-responsibilities",
+        "title": "Patient Rights & Responsibilities - General",
+        "in_nav": false
+      },
+      {
+        "path": "/periodontal-gum-care",
+        "title": "Gum Graft & Periodontal Treatment Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/preventive-dentistry",
+        "title": "Routine Dental Care | Teeth Cleaning Experts",
+        "in_nav": true
+      },
+      {
+        "path": "/privacy-policy",
+        "title": "Privacy Policy - General",
+        "in_nav": false
+      },
+      {
+        "path": "/refer-a-patient",
+        "title": "Patient Referral Program | Carenetic General Dentistry",
+        "in_nav": true
+      },
+      {
+        "path": "/schedule-appointment",
+        "title": "Schedule Appointment | Chandler",
+        "in_nav": true
+      },
+      {
+        "path": "/sedation-dentistry",
+        "title": "Sedation Dentistry | Anxiety-Free Dental Care",
+        "in_nav": true
+      },
+      {
+        "path": "/services",
+        "title": "Dental Services in Harrison, OH | Harrison Family Dental",
+        "in_nav": true
+      },
+      {
+        "path": "/sleep-apnea-snoring-solutions",
+        "title": "Sleep Dentistry Chandler | Snoring Solutions",
+        "in_nav": true
+      },
+      {
+        "path": "/smile-gallery",
+        "title": "Smile Gallery - General",
+        "in_nav": false
+      },
+      {
+        "path": "/terms-conditions",
+        "title": "Terms & Conditions - General",
+        "in_nav": false
+      },
+      {
+        "path": "/testimonials",
+        "title": "Testimonials - General",
+        "in_nav": false
+      },
+      {
+        "path": "/tmj-tmd-therapy",
+        "title": "TMJ Treatment Specialists Chandler",
+        "in_nav": true
+      }
+    ],
+    "planned": [
+      "/",
+      "/about",
+      "/about/careers",
+      "/about/news",
+      "/about/our-team",
+      "/accessibility-statement",
+      "/appointment-thank-you",
+      "/bill-pay",
+      "/blog",
+      "/blog/4-quick-cosmetic-treatments-to-boost-your-smile-this-holiday-season",
+      "/blog/5-common-smile-flaws-easily-corrected-with-veneers",
+      "/blog/5-easy-ways-to-reduce-your-childs-cavity-risk",
+      "/blog/5-reasons-to-consider-dental-implants",
+      "/blog/5-tips-for-adjusting-to-clear-aligner-therapy",
+      "/blog/5-ways-to-create-a-smile-you-feel-confident-about",
+      "/blog/adult-tooth-loss-is-common-heres-how-to-avoid-it",
+      "/blog/are-dental-implants-right-for-me",
+      "/blog/can-my-teeth-shift-after-invisalign-treatment",
+      "/blog/combining-dental-procedures-for-a-smile-makeover-thats-best-for-you",
+      "/blog/come-and-celebrate-our-exciting-news",
+      "/blog/crowns-vs-veneers-which-cosmetic-treatment-is-the-best-choice-for-you",
+      "/blog/daily-habits-that-boost-your-oral-health",
+      "/blog/diabetes-and-oral-health-a-closer-look-at-common-problems",
+      "/blog/dont-forget-this-important-fall-activity",
+      "/blog/everything-you-need-to-know-about-clear-aligners",
+      "/blog/follow-these-steps-to-save-your-knocked-out-tooth",
+      "/blog/gum-disease",
+      "/blog/have-discolored-dull-looking-teeth-here-are-5-cosmetic-solutions-for-a-whiter-brighter-smile",
+      "/blog/heres-how-to-choose-the-right-mouthguard-for-sleep-and-sports",
+      "/blog/holiday-sparkle-shine",
+      "/blog/how-can-i-help-prepare-my-child-for-their-first-dental-visit",
+      "/blog/how-long-do-porcelain-veneers-last",
+      "/blog/how-to-combat-dental-anxiety",
+      "/blog/how-to-lower-your-risk-for-adult-tooth-loss",
+      "/blog/how-to-take-care-of-your-mouth-after-dental-extractions",
+      "/blog/how-veneers-can-give-you-a-smile-makeover",
+      "/blog/is-a-smile-makeover-your-new-years-resolution-5-things-to-consider",
+      "/blog/its-oral-cancer-awareness-month-are-you-taking-these-preventive-measures",
+      "/blog/learn-more-about-proud-to-smile-dentistry",
+      "/blog/making-oral-health-a-priority-in-2023",
+      "/blog/mouth-cancer-awareness-month",
+      "/blog/no-dental-insurance-the-solution-is-clear-bernardsville",
+      "/blog/one-treatment-so-many-possibilities",
+      "/blog/one-way-to-restore-your-smile",
+      "/blog/orthodontic-retention-everything-you-need-to-know-about-preserving-your-perfect-invisalign-smile",
+      "/blog/perio-protect-a-simple-and-effective-tool-for-preventing-gum-disease",
+      "/blog/plagued-by-bleeding-gums-when-to-see-a-dentist-for-periodontal-therapy",
+      "/blog/protect-your-teeth-while-enjoying-ice-cold-drinks-and-ice-cream-this-summer",
+      "/blog/proud-to-smile-dentistry-offers-smile-makeovers-to-our-patients-in-morris-and-somerset-counties",
+      "/blog/questions-you-should-ask-at-your-next-teeth-cleaning",
+      "/blog/scaling-and-root-planing-what-to-expect-during-your-deep-dental-cleaning",
+      "/blog/should-you-consider-dental-implants",
+      "/blog/sleep-apnea-qa",
+      "/blog/stop-feeling-self-conscious-the-life-changing-magic-of-dental-implants",
+      "/blog/the-answer-is-yes-you-should",
+      "/blog/the-importance-of-professional-teeth-cleanings",
+      "/blog/the-many-roles-of-dental-crowns",
+      "/blog/these-treatments-can-give-you-the-smile-of-your-dreams",
+      "/blog/tired-of-hiding-your-smile-3-ways-dental-bonding-can-help",
+      "/blog/tmd-explained",
+      "/blog/tooth-replacement-facts",
+      "/blog/we-have-an-exciting-announcement",
+      "/blog/welcome",
+      "/blog/what-to-expect-from-your-smile-makeover",
+      "/blog/what-to-expect-when-getting-started-with-invisalign",
+      "/blog/what-to-know-about-dental-implants",
+      "/blog/why-are-my-gums-bleeding",
+      "/blog/why-do-teeth-lose-their-whiteness",
+      "/blog/why-do-we-provide-oral-cancer-screenings",
+      "/blog/yes-daily-flossing-really-is-that-important-heres-why-and-how-to-do-it-well",
+      "/blog/yes-you-can-reverse-gingivitis-and-heres-why-you-should",
+      "/botox",
+      "/cleaning",
+      "/consent-for-treatment",
+      "/cookie-policy",
+      "/cosmetic-and-restorative-dentistry",
+      "/crowns",
+      "/dental-implants",
+      "/dental-veneers",
+      "/dentures",
+      "/disclaimer",
+      "/doctors",
+      "/doctors/karima-west-rdh",
+      "/doctors/patricia-swaintek-lamb-dmd",
+      "/emergency-dentistry",
+      "/extractions-oral-surgery",
+      "/financial-policies",
+      "/grievance-procedure",
+      "/hipaa-compliance-statement",
+      "/invisalign",
+      "/locations",
+      "/locations/bernardsville",
+      "/news/carenetic-general-dentistry-celebrates-dental-assistant-recognition-week",
+      "/news/carenetic-general-dentistry-donates-dental-care-supplies-to-local-shelter",
+      "/news/carenetic-general-dentistry-expands-services-to-include-nightguard-therapy",
+      "/news/carenetic-general-dentistry-hosts-free-dental-screenings-for-veterans",
+      "/news/carenetic-general-dentistry-partners-with-local-nonprofits-for-oral-health-initiative",
+      "/news/carenetic-general-dentistry-unveils-state-of-the-art-digital-x-ray",
+      "/news/carenetic-general-dentistry-wins-best-dental-practice-in-mesa-gilbert-and-queen-creek-award",
+      "/news/dr-robert-brown-honored-as-top-general-dentist-in-the-region",
+      "/news/dr-robert-smith-appointed-to-state-dental-board",
+      "/news/practice-launches-new-patient-loyalty-program",
+      "/notice-of-non-discrimination",
+      "/offers-promotions",
+      "/patient-center",
+      "/patient-center/faqs",
+      "/patient-center/financial-options",
+      "/patient-center/insurance",
+      "/patient-center/new-patients",
+      "/patient-center/patient-forms",
+      "/patient-center/pricing",
+      "/patient-portal",
+      "/patient-rights-responsibilities",
+      "/pediatric-dentistry",
+      "/periodontal-therapy",
+      "/privacy-policy",
+      "/refer-a-patient",
+      "/schedule-appointment",
+      "/services",
+      "/sleep-apnea",
+      "/smile-gallery",
+      "/teeth-whitening",
+      "/terms-conditions",
+      "/testimonials",
+      "/veneers"
+    ],
     "built": [],
-    "redirects": []
+    "redirects": [],
+    "notes": {
+      "provider_location_scope": "Reference site (pdp.carenetic.digital) has 2 locations and 18 doctor pages; real Proud to Smile practice has 1 location (Bernardsville, NJ) and 2 real staff (Dr. Patricia Swaintek-Lamb DMD, Karima West RDH). Per client decision, page count matches the real business, not the reference's fabricated roster. Design/layout template for doctor and location page types still follows the reference.",
+      "services_scope": "Reference site's 15 service pages replaced with the real business's 14 actual services (see reference/content-proudtosmile.md section 4) - do not build the reference's fabricated service list (e.g. TMJ Therapy, Sedation Dentistry, Advanced Orthodontic Technology aren't offered by the real practice).",
+      "blog_scope": "Reference site's 10 demo blog posts (+ author archive) replaced entirely with the real proudtosmile.com blog: 62 real posts, full verbatim content captured in reference/content-proudtosmile.md section 7. URL pattern kept as /blog/<slug> (reference's flat structure) rather than the real site's /post/<slug>."
+    }
   },
   "test_results": null,
   "seo_issues": []
