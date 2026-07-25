@@ -15,7 +15,12 @@ export default defineConfig({
   site: 'https://www.proudtosmile.com',
   base: previewBase || undefined,
   output: 'static',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      // Internal design-comparison page — never a real site route.
+      filter: (page) => !page.includes('/homepage-v2'),
+    }),
+  ],
   devToolbar: {
     enabled: false,
   },
