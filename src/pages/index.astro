@@ -35,7 +35,7 @@ const testimonials = [
     <Hero />
 
     <!-- Insurance strip -->
-    <section class="bg-primary-900 py-8 sm:py-9">
+    <section class="bg-primary-600 py-8 sm:py-9">
       <div class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-4 text-center sm:flex-row sm:justify-between sm:px-6 sm:text-left lg:px-8">
         <p class="text-white">We accept all major insurance providers.</p>
         <a href="/patient-center/insurance/" class="btn btn-secondary shrink-0">Am I Covered?</a>
@@ -99,14 +99,14 @@ const testimonials = [
     </section>
 
     <!-- Testimonials -->
-    <section class="bg-secondary-900 py-[var(--spacing-section)] text-white" aria-labelledby="testimonials-heading">
+    <section class="bg-secondary-600 py-[var(--spacing-section)] text-white" aria-labelledby="testimonials-heading">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 id="testimonials-heading" class="text-center text-white">What Our Patients Say</h2>
         <div class="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {testimonials.map((t) => (
             <blockquote class="rounded-[var(--radius-lg)] bg-white/10 p-8">
               <p class="text-lg leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
-              <p class="mt-4 text-sm font-semibold text-white/70">{t.author}</p>
+              <p class="mt-4 text-sm font-semibold text-white/90">{t.author}</p>
             </blockquote>
           ))}
         </div>
@@ -186,7 +186,7 @@ const testimonials = [
     </section>
 
     <!-- Closing CTA -->
-    <section class="relative overflow-hidden bg-primary-900 py-[var(--spacing-section)]" aria-labelledby="cta-heading">
+    <section class="relative overflow-hidden bg-gradient-to-br from-primary-600 to-secondary-600 py-[var(--spacing-section)]" aria-labelledby="cta-heading">
       <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <div class="rounded-[var(--radius-lg)] bg-white p-10 sm:p-14">
           <h2 id="cta-heading">Begin Your Journey to Better Dental Health</h2>
